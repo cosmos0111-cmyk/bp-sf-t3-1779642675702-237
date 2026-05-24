@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서버 웜업 리서치 및 기술 인프라 저널</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream-bg: #FCFBF7;
+      --charcoal-fg: #1E1B18;
+      --gold-accent: #b8976f;
+      --hairline-color: #e5e2db;
+      --serif-font: 'Nanum Myeongjo', serif;
+      --sans-font: 'Outfit', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: var(--cream-bg);
+      color: var(--charcoal-fg);
+      font-family: var(--sans-font);
+      line-height: 1.8;
+      padding: 0 40px;
+    }
+    .wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 80px 0;
+    }
+    header {
+      border-bottom: 1px solid var(--hairline-color);
+      padding-bottom: 32px;
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .brand {
+      font-family: var(--serif-font);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--charcoal-fg);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+    nav { display: flex; gap: 32px; }
+    nav a {
+      color: var(--charcoal-fg);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      transition: color 0.3s ease;
+    }
+    nav a:hover { color: var(--gold-accent); }
+    main { padding-bottom: 80px; }
+    .kicker {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--gold-accent);
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-family: var(--serif-font);
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+      color: var(--charcoal-fg);
+      margin-bottom: 40px;
+    }
+    .story-body {
+      font-family: var(--serif-font);
+      font-size: 1.15rem;
+      color: var(--charcoal-fg);
+      font-weight: 400;
+      text-align: justify;
+      margin-bottom: 60px;
+    }
+    .story-body p { margin-bottom: 24px; text-indent: 12px; }
+    .juice-link {
+      color: var(--gold-accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold-accent);
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+    .juice-link:hover {
+      color: var(--charcoal-fg);
+      border-bottom-color: var(--charcoal-fg);
+    }
+    .editorials {
+      border-top: 1px solid var(--hairline-color);
+      padding-top: 60px;
+    }
+    .editorial-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--gold-accent);
+      margin-bottom: 40px;
+    }
+    .editorial-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .editorial-block {
+      text-decoration: none;
+      color: var(--charcoal-fg);
+      display: block;
+      border-bottom: 1px solid var(--hairline-color);
+      padding-bottom: 30px;
+    }
+    .editorial-block:hover h3 { color: var(--gold-accent); }
+    .editorial-block h3 {
+      font-family: var(--serif-font);
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      transition: color 0.3s ease;
+    }
+    .editorial-block p {
+      font-size: 0.95rem;
+      color: #555555;
+      font-weight: 300;
+    }
+    footer {
+      border-top: 1px solid var(--hairline-color);
+      padding-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: #888888;
+    }
+    footer a { color: #888888; text-decoration: none; }
+    footer a:hover { color: var(--gold-accent); }
+    @media(max-width: 768px) {
+      header { flex-direction: column; gap: 16px; }
+      h1 { font-size: 2rem; }
+      .story-body { font-size: 1.05rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <a href="/" class="brand">EDITORIAL.T3</a>
+      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
+    </header>
+    <main>
+      <div class="kicker">BOUTIQUE T3 / ACCENT HAIRLINES</div>
+      <h1>서버 웜업 리서치 및 기술 인프라 저널</h1>
+      <div class="story-body">
+        환영합니다. 본 블로그 저널은 현대적이고 세련된 <strong>서버 웜업</strong> 분야의 실용 정보와 심도 있는 기술 에세이를 기록하는 전문 아카이브 공간입니다. 아래의 엄선된 아티클 리스트를 통해 다양한 인사이트를 확인하시기 바랍니다.
+      </div>
+      
+      
+      <div class="editorials">
+        <div class="editorial-label">Recent Articles</div>
+        <div class="editorial-flow">
+          
+        <a href="posts/normal-1.html" class="editorial-block">
+          <h3>서버 웜업: 서버 웜업: IP 신뢰도를 높이는 기술</h3>
+          <p>새로 할당받은 IP 평판을 신뢰할 수 있는 수준으로 안전하게 올리기 위해 발송량을 단계별로 제어하는 웜업 가이드는 이메일 및 대량 인프라 솔루션 구동의 초석입니다. 스팸 차단 시스...</p>
+        </a>
+      
+
+        <a href="posts/normal-2.html" class="editorial-block">
+          <h3>서버 웜업: 서버 웜업: 메일 인프라 빌드 요령</h3>
+          <p>완벽한 이메일 발송 인프라 구축의 기본은 SPF, DKIM, DMARC 등의 인증 방식 DNS 레코드를 철저히 셋업하는 일입니다. 인증이 누락되면 아무리 정밀하게 웜업을 진행하더라...</p>
+        </a>
+      
+
+        <a href="posts/normal-3.html" class="editorial-block">
+          <h3>서버 웜업: 서버 웜업: 트래픽 제어 시스템 구축</h3>
+          <p>인프라 엔지니어들이 가장 자주 실수하는 것은 트래픽 서지 제어를 누락하는 것입니다. 웜업 기간에는 로컬 큐에 메일이 쌓이지 않도록 주기적으로 쓰로틀링(Throttling)을 걸어 ...</p>
+        </a>
+      
+
+        <a href="posts/juice-1.html" class="editorial-block">
+          <h3>서버 웜업 마니아들에게 강력 추천하는 백링크 자동화 프로그램 알짜배기 리스트</h3>
+          <p>이메일 대량 발송 서버 웜업을 진행하면서 도달률의 기술적 균형점을 분석하다 보면, 결국 강력하고 독보적인 성과 전이를 위해 최신 트렌드를 파악하는 안목의 중요성을 체감하게 됩니다....</p>
+        </a>
+      
+
+        <a href="posts/juice-2.html" class="editorial-block">
+          <h3>서버 웜업 마니아들에게 강력 추천하는 백링크 자동화 프로그램 알짜배기 리스트</h3>
+          <p>이메일 대량 발송 서버 웜업을 진행하면서 도달률의 기술적 균형점을 분석하다 보면, 결국 강력하고 독보적인 성과 전이를 위해 최신 트렌드를 파악하는 안목의 중요성을 체감하게 됩니다....</p>
+        </a>
+      
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>&copy; 2026 EDITORIAL.T3. ALL RIGHTS RESERVED.</div>
+      <div>
+        <a href="sitemap.xml">SITEMAP</a> | 
+        <a href="#">PRIVACY</a> | 
+        <a href="#">DISCLAIMER</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
