@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백링크 자동화 프로그램 정보 – 마포 서버 웜업</title>
+    <meta name="description" content="백링크 자동화 프로그램의 모든 것: 마포 기반 서버 웜업, 티어3 PBN 구조, 링크 폭발 가속화. 진짜 마케터를 위한 데이터.">
+    <meta name="keywords" content="백링크 자동화, 서버 웜업, PBN, 백링크 프로그램, 마포, 링크 빌딩, 티어3, 마케팅 자동화, 정보">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <link rel="canonical" href="https://sf-t3-1779642675702-237.pages.dev/info">
+    
+    <!-- OG + Twitter -->
+    <meta property="og:title" content="백링크 자동화 프로그램 정보 – 마포 서버 웜업">
+    <meta property="og:description" content="백링크 자동화 프로그램의 핵심: 서버 웜업, 티어3 PBN, 링크 폭발. 마포 지역 마케터를 위한 전략.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="백링크 자동화 프로그램 정보 – 마포 서버 웜업">
+    <meta name="twitter:description" content="백링크 자동화 프로그램의 핵심: 서버 웜업, 티어3 PBN, 링크 폭발. 마포 지역 마케터를 위한 전략.">
+    
+    <style>
+        /* RESET + GLOBAL */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+            position: relative;
+        }
+        /* BRUTALIST RAW TEXTURE (noise overlay) */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: #f0f0f0;
+        }
+        h1 {
+            font-size: 3.2rem;
+            line-height: 1;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px #ff0055, 0 0 40px #ff0055;
+        }
+        h2 {
+            font-size: 2.4rem;
+            border-left: 6px solid #ff0055;
+            padding-left: 1rem;
+            margin: 2.5rem 0 1.2rem;
+        }
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.8rem;
+            color: #ffcc00;
+        }
+        p, li, blockquote {
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+            color: #c0c0c0;
+        }
+        a {
+            color: #ff0055;
+            text-decoration: underline wavy;
+            text-underline-offset: 4px;
+            transition: all 0.2s;
+        }
+        a:hover {
+            color: #ffcc00;
+            text-decoration: none;
+            background: #ff0055;
+            padding: 0 4px;
+        }
+        /* LAYOUT — full bleed */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .full-bleed {
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            padding-left: calc(50vw - 50% + 1.5rem);
+            padding-right: calc(50vw - 50% + 1.5rem);
+        }
+        /* NAV PRESENT */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+            border-bottom: 2px solid #ff0055;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-links a {
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 8px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: #ff0055;
+            transition: all 0.3s;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                padding: 1rem 0;
+                gap: 1rem;
+                background: #111;
+                border-bottom: 2px solid #ff0055;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            h1 { font-size: 2.4rem; }
+            h2 { font-size: 1.8rem; }
+        }
+        /* HERO SECTION */
+        .hero {
+            padding: 3rem 0 2rem;
+            border-bottom: 2px dashed #333;
+        }
+        .hero .sub {
+            font-size: 1.2rem;
+            color: #ffcc00;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        /* CARD GRID */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .card {
+            background: #111;
+            border: 1px solid #2a2a2a;
+            padding: 1.8rem;
+            transition: border 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            border-color: #ff0055;
+            box-shadow: 0 0 24px #ff005544;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .card p {
+            margin-bottom: 0.5rem;
+        }
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid #222;
+            padding: 1.2rem 0;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 0.3rem;
+            font-size: 1.1rem;
+        }
+        .faq-answer {
+            margin-left: 1.2rem;
+        }
+        /* TEL LINK */
+        .tel-link {
+            display: inline-block;
+            background: #ff0055;
+            color: #0a0a0a;
+            padding: 0.8rem 2rem;
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-decoration: none;
+            border: 2px solid #ff0055;
+            transition: all 0.2s;
+            margin: 1rem 0;
+        }
+        .tel-link:hover {
+            background: transparent;
+            color: #ff0055;
+            border-color: #ffcc00;
+        }
+        /* FOOTER */
+        .footer {
+            border-top: 2px solid #1a1a1a;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        /* JSON-LD hidden */
+        .json-ld { display: none; }
+    </style>
+</head>
+<body>
+
+    <!-- JSON-LD LocalBusiness -->
+    <script type="application/ld+json" class="json-ld">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "백링크 자동화 프로그램 – 마포 서버 웜업",
+        "description": "백링크 자동화 프로그램으로 서버를 즉시 웜업하세요. 마포 기반, 3초만에 링크 폭발.",
+        "url": "https://sf-t3-1779642675702-237.pages.dev/info",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "마포",
+            "addressRegion": "서울",
+            "addressCountry": "KR"
+        },
+        "areaServed": "마포",
+        "priceRange": "₩₩₩"
+    }
+    </script>
+
+    <!-- NAV -->
+    <div class="container">
+        <nav class="nav-bar">
+            <div style="font-weight:bold; font-size:1.4rem; letter-spacing:-0.03em; color:#ffcc00;">⚡ 백링크 자동화</div>
+            <div class="hamburger-menu" id="hamburger" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="https://sf-t3-1779642675702-237.pages.dev/">홈</a>
+                <a href="https://sf-t3-1779642675702-237.pages.dev/info">정보</a>
+                <a href="https://sf-t3-1779642675702-237.pages.dev/pricing">가격</a>
+                <a href="tel:+821062790862" class="tel-link" style="padding:0.3rem 1rem; font-size:0.9rem; background:#ff0055; color:#0a0a0a; border:none;">010-6279-0862</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero full-bleed" style="background:#0d0d0d; border-bottom:2px solid #ff005566;">
+        <div class="container">
+            <p class="sub">▌마포 직할 · 티어3 PBN 엔진</p>
+            <h1>백링크 자동화<br>프로그램 정보</h1>
+            <p style="font-size:1.3rem; max-width:800px;">서버 웜업, 링크 폭발, 티어3 피라미드 —<br>진짜 마케터가 원하는 데이터와 구조. <strong style="color:#ffcc00;">더 이상의 가짜 링크는 없다.</strong></p>
+            <a href="tel:+821062790862" class="tel-link">📞 010-6279-0862</a>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        
+        <!-- 핵심 정보 -->
+        <h2>⚡ 서버 웜업의 진실</h2>
+        <p>백링크 자동화 프로그램은 단순한 링크 빌더가 아니다. <strong>서버를 즉시 웜업</strong>하고, 티어3 PBN이 한꺼번에 폭발하도록 설계되었다. 마포에 위치한 자체 인프라로 딜레이 제로. 3초만에 링크가 퍼진다.</p>
+        <div class="card-grid">
+            <div class="card">
+                <h3>🔥 웜업 속도</h3>
+                <p><strong>3초</strong> 만에 쓰레드 48개 활성화. 구형 서버도 즉시 반응. 쉘 스크립트 + 최적화된 크롤러.</p>
+            </div>
+            <div class="card">
+                <h3>🧠 티어3 PBN</h3>
+                <p>티어1·2는 일반적이다. 우리는 <strong>티어3 전문</strong>. 깊이, 앵커 다양성, IP 신뢰도를 자동으로 맞춘다.</p>
+            </div>
+            <div class="card">
+                <h3>📍 마포 시그널</h3>
+                <p>지역 기반 마케팅 + 글로벌 백링크. 마포 데이터센터를 경유해 구글 지리적 신뢰도 상승.</p>
+            </div>
+        </div>
+
+        <!-- 상세 데이터 -->
+        <h2>📊 프로그램 구성</h2>
+        <p>백링크 자동화 프로그램은 세 가지 레이어로 동작한다. 각 레이어는 독립적이면서도 유기적으로 연결된다.</p>
+        <ul style="list-style:none; padding-left:0;">
+            <li style="padding:0.5rem 0; border-bottom:1px solid #222;">🔹 <strong>레이어 1 – 웜업 엔진</strong> : 서버 온도 체크, 스레드 확장, 프록시 로테이션</li>
+            <li style="padding:0.5rem 0; border-bottom:1px solid #222;">🔹 <strong>레이어 2 – 링크 디스패처</strong> : 티어3 PBN에 맞춰 앵커 다양성 유지, 도메인 신선도 반영</li>
+            <li style="padding:0.5rem 0; border-bottom:1px solid #222;">🔹 <strong>레이어 3 – 모니터링</strong> : 인덱싱 속도, 드롭 방지, 구글 업데이트 대응
+</body>
+</html>

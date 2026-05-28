@@ -1,213 +1,517 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>서버 웜업 리서치 및 기술 인프라 저널</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #FCFBF7;
-      --charcoal-fg: #1E1B18;
-      --gold-accent: #b8976f;
-      --hairline-color: #e5e2db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈 · 백링크 자동화 프로그램 – 서버 웜업 마포</title>
+    <meta name="description" content="백링크 자동화 프로그램으로 서버를 즉시 웜업하세요. 마포 기반, 3초만에 링크 폭발. 티어3 PBN 전문가용. 전화 010-6279-0862">
+    <meta name="keywords" content="백링크 자동화, 서버 웜업, PBN, 백링크 프로그램, 마포, 링크 빌딩, 티어3, 마케팅 자동화">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <link rel="canonical" href="https://sf-t3-1779642675702-237.pages.dev">
+
+    <!-- OG / Twitter -->
+    <meta property="og:title" content="백링크 자동화 프로그램 – 서버 웜업 마포">
+    <meta property="og:description" content="백링크 자동화 프로그램으로 서버를 즉시 웜업하세요. 마포 기반, 3초만에 링크 폭발. 티어3 PBN 전문가용.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sf-t3-1779642675702-237.pages.dev">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='380' font-family='Impact' font-size='120' fill='%23ff3b00'%3EBRUTAL%3C/text%3E%3Ctext x='60' y='500' font-family='Impact' font-size='80' fill='%23fff'%3EWARM UP%3C/text%3E%3C/svg%3E">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="백링크 자동화 프로그램 – 서버 웜업 마포">
+    <meta name="twitter:description" content="백링크 자동화 프로그램으로 서버를 즉시 웜업하세요. 마포 기반, 3초만에 링크 폭발. 티어3 PBN 전문가용.">
+    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='380' font-family='Impact' font-size='120' fill='%23ff3b00'%3EBRUTAL%3C/text%3E%3Ctext x='60' y='500' font-family='Impact' font-size='80' fill='%23fff'%3EWARM UP%3C/text%3E%3C/svg%3E">
+
+    <!-- JSON-LD LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "백링크 자동화 프로그램 – 서버 웜업",
+        "description": "마포 기반 서버 웜업 & 백링크 자동화 프로그램. 티어3 PBN 전문가용.",
+        "telephone": "+82-10-6279-0862",
+        "areaServed": "마포",
+        "url": "https://sf-t3-1779642675702-237.pages.dev",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "마포",
+            "addressCountry": "KR"
+        }
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.8rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* RESET + GLOBAL */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { 
+            font-size: 16px; 
+            scroll-behavior: smooth;
+            background: #000;
+        }
+        body {
+            font-family: Impact, system-ui, 'Arial Black', sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.1;
+            letter-spacing: 0.02em;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* BRUTALIST RAW TEXTURE (noise overlay) */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="n"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23n)" opacity="0.07"/%3E%3C/svg%3E');
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: overlay;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+        h1 { font-size: clamp(3.2rem, 14vw, 7rem); line-height: 0.88; }
+        h2 { font-size: clamp(2.4rem, 8vw, 4.4rem); line-height: 0.92; }
+        h3 { font-size: 1.8rem; }
+        p, li, blockquote { font-family: 'system-ui', 'Helvetica Neue', sans-serif; font-weight: 300; line-height: 1.5; }
+        a { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
+        a:hover { color: #ff3b00; }
+
+        /* LAYOUT — full bleed, asym, negative margins */
+        .container {
+            max-width: none;
+            padding: 0 72px;
+        }
+        section, header, footer {
+            padding: 72px 72px;
+            position: relative;
+        }
+        section + section { margin-top: 120px; }
+
+        /* BRUTALIST BORDERS & SKEW */
+        .skew-box {
+            display: inline-block;
+            border: 4px solid #ff3b00;
+            transform: rotate(-1deg) skewX(-2deg);
+            padding: 0.2em 0.6em;
+            margin: 0.4em 0;
+        }
+        .brutal-border {
+            border: 4px solid #ff3b00;
+        }
+        .brutal-border-top { border-top: 4px solid #ff3b00; }
+        .brutal-border-bottom { border-bottom: 4px solid #ff3b00; }
+
+        /* HEADER */
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 72px 20px;
+            background: #000;
+            border-bottom: 4px solid #ff3b00;
+            position: relative;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 2.2rem;
+            line-height: 1;
+            letter-spacing: -0.04em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .logo span { color: #ff3b00; }
+
+        /* NAV */
+        nav {
+            display: flex;
+            gap: 48px;
+            align-items: center;
+        }
+        nav a {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 4px;
+            transition: 0.15s;
+        }
+        nav a:hover {
+            border-bottom-color: #ff3b00;
+            color: #ff3b00;
+        }
+
+        /* HAMBURGER (checkbox hack) */
+        .hamburger-wrap {
+            display: none;
+        }
+        #hamburger { display: none; }
+        .hamburger-label {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            padding: 8px 4px;
+        }
+        .hamburger-label span {
+            display: block;
+            width: 32px;
+            height: 4px;
+            background: #fff;
+            transition: 0.2s;
+        }
+        #hamburger:checked ~ nav {
+            display: flex !important;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #000;
+            border-bottom: 4px solid #ff3b00;
+            padding: 32px 48px;
+            gap: 28px;
+            z-index: 200;
+        }
+        #hamburger:checked ~ nav a {
+            font-size: 1.6rem;
+        }
+
+        /* HERO */
+        .hero {
+            padding-top: 80px;
+            padding-bottom: 100px;
+            background: #000;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '⚡⚡⚡';
+            position: absolute;
+            bottom: -40px;
+            right: -20px;
+            font-size: 18rem;
+            opacity: 0.08;
+            transform: rotate(12deg);
+            pointer-events: none;
+        }
+        .hero-text h1 {
+            margin-bottom: 24px;
+            word-break: break-word;
+        }
+        .hero-text h1 .accent { color: #ff3b00; }
+        .hero-text p {
+            font-size: 1.3rem;
+            max-width: 40ch;
+            margin-bottom: 36px;
+            border-left: 4px solid #ff3b00;
+            padding-left: 24px;
+        }
+        .hero-cta {
+            display: inline-block;
+            background: #ff3b00;
+            color: #000;
+            font-size: 1.6rem;
+            font-weight: 900;
+            padding: 16px 48px;
+            border: 4px solid #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            transform: rotate(-2deg) skewX(-2deg);
+            transition: 0.15s;
+            margin-top: 20px;
+        }
+        .hero-cta:hover {
+            background: #fff;
+            color: #000;
+            border-color: #ff3b00;
+            transform: rotate(0deg) skewX(0deg);
+        }
+
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+            border: 4px solid #ff3b00;
+            min-height: 320px;
+            transform: rotate(2deg) skewX(2deg);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-visual::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(45deg, #ff3b00 0px, #ff3b00 4px, transparent 4px, transparent 16px);
+            opacity: 0.15;
+        }
+        .hero-visual .graphic-text {
+            font-size: 4rem;
+            font-weight: 900;
+            color: #fff;
+            z-index: 1;
+            text-shadow: 8px 8px 0 #ff3b00;
+            letter-spacing: -4px;
+        }
+
+        /* FEATURES / SERVICES */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 48px;
+            margin-top: 48px;
+        }
+        .feature-card {
+            border: 4px solid #ff3b00;
+            padding: 48px 32px;
+            background: #0a0a0a;
+            transform: rotate(-0.5deg);
+            transition: 0.2s;
+        }
+        .feature-card:nth-child(even) {
+            transform: rotate(1deg) translateY(12px);
+        }
+        .feature-card:hover {
+            background: #1a1a1a;
+            border-color: #fff;
+            transform: rotate(0deg) scale(1.02);
+        }
+        .feature-card .icon {
+            font-size: 3.4rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+        .feature-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+            color: #ff3b00;
+        }
+        .feature-card p {
+            font-family: system-ui, sans-serif;
+            font-size: 0.95rem;
+        }
+
+        /* REVIEWS (UGC) */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 48px;
+            margin-top: 48px;
+        }
+        .review-card {
+            border: 4px solid #fff;
+            padding: 36px 28px;
+            background: #0f0f0f;
+            transform: skewX(-1deg) rotate(0.5deg);
+            position: relative;
+        }
+        .review-card::before {
+            content: '“';
+            font-size: 5rem;
+            position: absolute;
+            top: -8px;
+            left: 12px;
+            color: #ff3b00;
+            font-family: Impact, sans-serif;
+            line-height: 1;
+            opacity: 0.3;
+        }
+        .review-card .meta {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 16px;
+            font-family: system-ui, sans-serif;
+            font-size: 0.9rem;
+            border-bottom: 2px solid #ff3b00;
+            padding-bottom: 8px;
+        }
+        .review-card .meta .name { font-weight: 700; color: #ff3b00; }
+        .review-card .meta .date { opacity: 0.6; }
+        .review-card .stars {
+            color: #ff3b00;
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+        }
+        .review-card blockquote {
+            font-family: system-ui, sans-serif;
+            font-size: 1rem;
+            font-style: normal;
+            margin-top: 8px;
+        }
+        .review-card:nth-child(odd) {
+            transform: skewX(2deg) rotate(-0.5deg);
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 4px solid #ff3b00;
+            margin-top: 120px;
+            padding: 72px 72px 48px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 48px;
+            background: #050505;
+        }
+        footer .col {
+            flex: 1 1 200px;
+        }
+        footer .col h4 {
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            color: #ff3b00;
+        }
+        footer .col a {
+            display: block;
+            margin-bottom: 8px;
+            font-family: system-ui, sans-serif;
+        }
+        footer .phone {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 4px solid #ff3b00;
+            padding-bottom: 4px;
+        }
+        footer .phone:hover { color: #ff3b00; }
+        footer .copyright {
+            width: 100%;
+            text-align: center;
+            border-top: 2px solid #222;
+            padding-top: 24px;
+            margin-top: 24px;
+            font-family: system-ui, sans-serif;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .container, section, header, footer {
+                padding-left: 28px;
+                padding-right: 28px;
+            }
+            header {
+                padding: 24px 28px 16px;
+            }
+            nav {
+                display: none;
+                width: 100%;
+                gap: 20px;
+            }
+            .hamburger-wrap {
+                display: block;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 48px;
+                padding-top: 48px;
+                padding-bottom: 64px;
+            }
+            .hero-text h1 {
+                font-size: 3.2rem;
+            }
+            .hero-visual {
+                min-height: 200px;
+                transform: rotate(0deg) skewX(0deg);
+            }
+            .hero-visual .graphic-text {
+                font-size: 2.4rem;
+            }
+            .features-grid, .review-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .feature-card:nth-child(even) {
+                transform: rotate(0deg) translateY(0);
+            }
+            .review-card {
+                transform: skewX(0deg) rotate(0deg);
+            }
+            .review-card:nth-child(odd) {
+                transform: skewX(0deg) rotate(0deg);
+            }
+            footer {
+                flex-direction: column;
+                gap: 32px;
+                padding: 48px 28px 32px;
+            }
+            footer .phone {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* UTILITY */
+        .text-accent { color: #ff3b00; }
+        .mt-48 { margin-top: 48px; }
+        .mb-24 { margin-bottom: 24px; }
+        .full-bleed { width: 100vw; margin-left: calc(-50vw + 50%); }
+
+        /* SECTION TITLE BRUTAL */
+        .section-title {
+            display: inline-block;
+            border: 4px solid #ff3b00;
+            padding: 8px 32px;
+            transform: rotate(-2deg);
+            margin-bottom: 32px;
+        }
+        .section-title h2 {
+            font-size: inherit;
+            line-height: inherit;
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
+
+    <!-- HEADER -->
     <header>
-      <a href="/" class="brand">EDITORIAL.T3</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE T3 / ACCENT HAIRLINES</div>
-      <h1>서버 웜업 리서치 및 기술 인프라 저널</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 저널은 현대적이고 세련된 <strong>서버 웜업</strong> 분야의 실용 정보와 심도 있는 기술 에세이를 기록하는 전문 아카이브 공간입니다. 아래의 엄선된 아티클 리스트를 통해 다양한 인사이트를 확인하시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>서버 웜업: 서버 웜업: IP 신뢰도를 높이는 기술</h3>
-          <p>새로 할당받은 IP 평판을 신뢰할 수 있는 수준으로 안전하게 올리기 위해 발송량을 단계별로 제어하는 웜업 가이드는 이메일 및 대량 인프라 솔루션 구동의 초석입니다. 스팸 차단 시스...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>서버 웜업: 서버 웜업: 메일 인프라 빌드 요령</h3>
-          <p>완벽한 이메일 발송 인프라 구축의 기본은 SPF, DKIM, DMARC 등의 인증 방식 DNS 레코드를 철저히 셋업하는 일입니다. 인증이 누락되면 아무리 정밀하게 웜업을 진행하더라...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>서버 웜업: 서버 웜업: 트래픽 제어 시스템 구축</h3>
-          <p>인프라 엔지니어들이 가장 자주 실수하는 것은 트래픽 서지 제어를 누락하는 것입니다. 웜업 기간에는 로컬 큐에 메일이 쌓이지 않도록 주기적으로 쓰로틀링(Throttling)을 걸어 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>서버 웜업 마니아들에게 강력 추천하는 백링크 자동화 프로그램 알짜배기 리스트</h3>
-          <p>이메일 대량 발송 서버 웜업을 진행하면서 도달률의 기술적 균형점을 분석하다 보면, 결국 강력하고 독보적인 성과 전이를 위해 최신 트렌드를 파악하는 안목의 중요성을 체감하게 됩니다....</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>서버 웜업 마니아들에게 강력 추천하는 백링크 자동화 프로그램 알짜배기 리스트</h3>
-          <p>이메일 대량 발송 서버 웜업을 진행하면서 도달률의 기술적 균형점을 분석하다 보면, 결국 강력하고 독보적인 성과 전이를 위해 최신 트렌드를 파악하는 안목의 중요성을 체감하게 됩니다....</p>
-        </a>
-      
+        <div class="logo">백링크<span>⚡</span>WARM</div>
+        <div class="hamburger-wrap">
+            <input type="checkbox" id="hamburger" aria-label="메뉴 열기">
+            <label for="hamburger" class="hamburger-label">
+                <span></span><span></span><span></span>
+            </label>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.T3. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+        <nav>
+            <a href="#">홈</a>
+            <a href="#">워크</a>
+            <a href="#">후기</a>
+            <a href="#">연락</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero container full-bleed" style="padding: 72px;">
+            <div class="hero-text">
+                <h1>
+                    서버 <span class="accent">웜업</span><br>
+                    백링크 <span class="accent">폭발</span>
+                </h1>
+                <p>
+                    마포에서 가동하는 티어3 PBN 백링크 자동화. <br>
+                    3초면 링크가 불타오른다. <strong class="text-accent">결과는 직빵.</strong>
+                </p>
+                <a href="tel:+821062790862" class="hero-cta">📞 010-6279-0862</a>
+            </div>
+            <div class="hero-visual">
+                <span class="
 </body>
 </html>
