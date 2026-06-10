@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[마포 백링크 자동화 프로그램]]></title>
-  <link>https://sf-t3-1779642675702-237.pages.dev</link>
-  <description><![CDATA[마포 서버 웜업 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Thu, 28 May 2026 12:40:42 GMT</pubDate>
-  <lastBuildDate>Thu, 28 May 2026 12:40:42 GMT</lastBuildDate>
-  <atom:link href="https://sf-t3-1779642675702-237.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[서버 웜업]]></title>
+  <link>https://cosmos0111-cmyk.github.io/bp-sf-t3-1779642675702-237</link>
+  <description><![CDATA[서버 웜업 - 백링크 자동화 프로그램 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Wed, 10 Jun 2026 18:24:01 GMT</pubDate>
+  <lastBuildDate>Wed, 10 Jun 2026 18:24:01 GMT</lastBuildDate>
+  <atom:link href="https://cosmos0111-cmyk.github.io/bp-sf-t3-1779642675702-237/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[마포 백링크 자동화 프로그램 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://sf-t3-1779642675702-237.pages.dev/</link>
-      <guid isPermaLink="true">https://sf-t3-1779642675702-237.pages.dev/</guid>
-      <description><![CDATA[마포 서버 웜업 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Thu, 28 May 2026 12:40:42 GMT</pubDate>
+      <title><![CDATA[백링크 자동화 프로그램 경험자에게 물어본 현실적인 판단 기준]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-sf-t3-1779642675702-237/posts/interview-002-1g1fakc.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-sf-t3-1779642675702-237/posts/interview-002-1g1fakc.html</guid>
+      <description><![CDATA[### 포스트 DNA f1dd3a5f #### 제목: 창작한 제목: "현대 번역의 흔적: 엥케이리디온의 18세기 영역본과 현대 번역본 간의 결정적 오류와 의미 왜곡" 관점: 현장에서 관찰한 작은 단서로 큰 차이를 설명 구조: myth-counterexample — 통념]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[백링크 자동화 프로그램에 관한 흔한 오해, 직접 확인해보니 달랐던 점]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-sf-t3-1779642675702-237/posts/myth-001-1g1fakc.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-sf-t3-1779642675702-237/posts/myth-001-1g1fakc.html</guid>
+      <description><![CDATA[### 포스트 DNA f1dd3a5a #### 제목: 창작한 제목: "독일 블루카드 비자의 연봉 기준 하향 조정: 특정 직군에서 IT 경력 인정 예외 요건" 아, 진짜... 독일 취업비자 블루카드에 대한 2024년 연봉 기준 하향 조정과 그로 인한 특정 직군에서의 IT]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
