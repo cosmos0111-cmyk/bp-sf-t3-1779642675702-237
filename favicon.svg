@@ -1,8 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-  <defs><linearGradient id="bgsf-t" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#b71c1c"/><stop offset="100%" stop-color="#e65100"/>
-  </linearGradient></defs>
-  <rect width="32" height="32" rx="6" fill="url(#bgsf-t)"/>
-  <polygon points="16,2 20,12 30,12 22,18 25,28 16,22 7,28 10,18 2,12 12,12" fill="rgba(183,28,28,0.9)" stroke="rgba(230,81,0,0.6)" stroke-width="2"/>
-  <text x="16" y="21" text-anchor="middle" fill="#fff" font-size="8" font-weight="700" font-family="system-ui">SF</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
+  <metadata>BPaaS site identity 4370e2f0721dc9e1</metadata>
+  <rect width="64" height="64" rx="8" fill="hsl(344 78% 42%)"/>
+  <path d="M34 0h30v64H20Z" fill="hsl(113 84% 63%)" opacity="0.82"/>
+  <g transform="rotate(237 32 32)" opacity="0.42"><rect x="16" y="16" width="32" height="32" rx="5" fill="none" stroke="#101418" stroke-width="7" transform="rotate(45 32 32)"/></g>
+  <text x="32" y="39" text-anchor="middle" fill="#101418" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="0">SF</text>
 </svg>
