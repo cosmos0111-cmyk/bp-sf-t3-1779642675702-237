@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
-  <metadata>BPaaS site identity 4370e2f0721dc9e1</metadata>
-  <rect width="64" height="64" rx="8" fill="hsl(344 78% 42%)"/>
-  <path d="M34 0h30v64H20Z" fill="hsl(113 84% 63%)" opacity="0.82"/>
-  <g transform="rotate(237 32 32)" opacity="0.42"><rect x="16" y="16" width="32" height="32" rx="5" fill="none" stroke="#101418" stroke-width="7" transform="rotate(45 32 32)"/></g>
-  <text x="32" y="39" text-anchor="middle" fill="#101418" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="0">SF</text>
+  <title>백링크 자동화 프로그램</title>
+  <rect width="64" height="64" rx="11" fill="hsl(344 44% 34%)"/>
+  <g transform="rotate(90 32 32)"><circle cx="16" cy="16" r="5" fill="hsl(344 24% 96%)"/><circle cx="32" cy="16" r="5" fill="hsl(344 24% 96%)"/><circle cx="48" cy="16" r="5" fill="hsl(344 24% 96%)"/><circle cx="16" cy="32" r="5" fill="hsl(344 24% 96%)"/><circle cx="32" cy="32" r="6" fill="hsl(135 68% 67%)"/><circle cx="48" cy="32" r="5" fill="hsl(344 24% 96%)"/><circle cx="16" cy="48" r="5" fill="hsl(344 24% 96%)"/><circle cx="32" cy="48" r="5" fill="hsl(344 24% 96%)"/><circle cx="48" cy="48" r="5" fill="hsl(344 24% 96%)"/></g>
 </svg>
