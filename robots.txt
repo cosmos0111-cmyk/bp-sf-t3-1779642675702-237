@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sf-t3-1779642675702-237.maphoshirts.today/sitemap.xml
-Sitemap: https://sf-t3-1779642675702-237.maphoshirts.today/sitemap-pages.xml
+Sitemap: https://mapo-guide-note.maphoshirts.today/sitemap.xml
+Sitemap: https://mapo-guide-note.maphoshirts.today/sitemap-pages.xml
